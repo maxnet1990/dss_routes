@@ -1,28 +1,21 @@
 package routes;
 
-import java.awt.Component;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
-import javax.swing.SpringLayout;
-import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import javax.swing.JComboBox;
+import javax.swing.SpringLayout;
 
-public class MainWindow {
+public class Main {
 
 	private JFrame frame;
 
@@ -40,7 +33,7 @@ public class MainWindow {
 
 			public void run() {
 				try {
-					MainWindow window = new MainWindow();
+					Main window = new Main();
 					window.frame.setVisible(true);
 
 				} catch (Exception e) {
@@ -53,7 +46,7 @@ public class MainWindow {
 	/**
 	 * Create the application.
 	 */
-	public MainWindow() {
+	public Main() {
 		initialize();
 	}
 
